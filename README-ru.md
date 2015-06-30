@@ -1,30 +1,31 @@
-[ Languages: [English](README.md), [Português](README-pt.md), [中文](README-zh.md) ]
+[ Languages: [English](README.md), [Português](README-pt.md), [中文](README-zh.md), [Русский](README-ru.md) ]
 
 
-# The Art of Command Line
+# Исскуство Командной Строки 
 
 [![Join the chat at https://gitter.im/jlevy/the-art-of-command-line](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jlevy/the-art-of-command-line?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-- [Meta](#meta)
-- [Basics](#basics)
-- [Everyday use](#everyday-use)
-- [Processing files and data](#processing-files-and-data)
+
+- [Мета](#meta)
+- [Основы](#basics)
+- [Повседневное Использование](#everyday-use)
+- [Обработка файлов и данных](#processing-files-and-data)
 - [System debugging](#system-debugging)
-- [One-liners](#one-liners)
+- [В одну строку](#one-liners)
 - [Obscure but useful](#obscure-but-useful)
-- [More resources](#more-resources)
+- [Другие ресурсы](#more-resources)
 - [Disclaimer](#disclaimer)
 
 
 ![curl -s 'https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README.md' | egrep -o '`\w+`' | tr -d '`' | cowsay -W50](cowsay.png)
 
-Fluency on the command line is a skill often neglected or considered arcane, but it improves your flexibility and productivity as an engineer in both obvious and subtle ways. This is a selection of notes and tips on using the command-line that I've found useful when working on Linux. Some tips are elementary, and some are fairly specific, sophisticated, or obscure. This page is not long, but if you can use and recall all the items here, you know a lot.
+Свободне владение командной строкой это навык которым часто пренебрегают или считают древним и не нужным, однако он улучшит вашу гибкость и производительность как инженера как в очевидных так и не в совсем явных ситуациях. Данная работа ето собрание моих записок и советов по использованию коммандной строки которые я считаю помогут вам с работой на Linux. Некоторые советы просты, некоторые из них довольно специфичны, элегантны или временами неясны. Данная статья не так велика по объему страниц, но если вы сможете использовать и вспомнить в будущем информацию предложенную здесь, вы значительно углубите ваши знания.
 
-Much of this
-[originally](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands)
-[appeared](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)
-on [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know),
-but given the interest there, it seems it's worth using Github, where people more talented than I can readily suggest improvements. If you see an error or something that could be better, please submit an issue or PR! (Of course please review the meta section and existing PRs/issues first.)
+Основной объем этой информации  
+[оригинально](http://www.quora.com/What-are-some-lesser-known-but-useful-Unix-commands)
+[объсуждался](http://www.quora.com/What-are-the-most-useful-Swiss-army-knife-one-liners-on-Unix)
+здесь [Quora](http://www.quora.com/What-are-some-time-saving-tips-that-every-Linux-user-should-know).
+Заметя каким большим успехом пользовалась эта тема там, было логично воспользоваться Github, где люди более талантливые чем я смогли бы предложить поправки и добавления. Если вы нашли ошибку или что-то что могло бы быть' описанно лучше, пожалуйста задайте Вопрос или Pull Request! (Разумеется проверьте сначало уже существуюшие PR/вопросы и Мета)
 
 
 ## Meta
